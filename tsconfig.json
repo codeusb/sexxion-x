@@ -23,7 +23,6 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     // "suppressImplicitAnyIndexErrors": true
-    "allowImportingTsExtensions": true,
-    "preserveSymlinks": true
+    "allowImportingTsExtensions": true
   }
 }

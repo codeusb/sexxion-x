@@ -11,7 +11,7 @@
     "lint:stylelint": "stylelint packages/**/*.{css,less,scss,sass} --quiet",
     "lint:prettier": "prettier --write --loglevel warn \"packages/**/*.{js,ts,json,jsx,tsx,css,less,scss,stylus,html,md}\"",
     "test": "jest",
-    "pre-check": "npx lint-staged",
+    "pre-check": "tsc && npx lint-staged",
     "prepare": "husky install",
     "docs:publish": "npm run -F @sexxion-x/docs deploy"
   },

@@ -55,7 +55,7 @@ const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(
 
     const innerClass = classNames('textarea', {});
 
-    const textAreaStyle: CSSProperties = {};
+    const textAreaStyle: CSSProperties & { resize?: string } = {};
     if (disabled) {
       textAreaStyle.resize = 'none';
     }
