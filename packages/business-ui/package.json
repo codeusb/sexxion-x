@@ -1,7 +1,7 @@
 {
   "name": "@sexxion-x/business-ui",
   "private": false,
-  "version": "0.0.0",
+  "version": "0.0.2",
   "main": "dist/index.umd.js",
   "module": "dist/index.mjs",
   "typings": "dist/index.d.ts",

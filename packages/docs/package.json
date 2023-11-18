@@ -1,7 +1,8 @@
 {
   "name": "@sexxion-x/docs",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "A static site based on dumi",
+  "private": true,
   "scripts": {
     "start": "npm run dev",
     "dev": "dumi dev",
