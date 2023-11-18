@@ -1,4 +1,4 @@
 node_modules
-*.tsbuildinfo
 .turbo
-packages/docs/docs_dist
+# *.tsbuildinfo
+
