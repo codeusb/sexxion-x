@@ -1,0 +1,42 @@
+@import '../../../style/style.module.less';
+
+.sex-layout {
+  display: flex;
+  flex-direction: column;
+  flex: auto; //使得layout-hasSider下的layout可以占据剩余部分
+}
+
+.sex-layout-has-sider {
+  flex-direction: row;
+}
+
+.sex-header {
+  text-align: center;
+  height: 64px;
+  line-height: 64px;
+  flex: none;
+  padding-inline: 50px;
+}
+
+.sex-content {
+  flex: auto;
+  text-align: center;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sex-footer {
+  text-align: center;
+  flex: none;
+  height: 64px;
+  line-height: 64px;
+}
+
+.sex-sider {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

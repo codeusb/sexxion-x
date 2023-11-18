@@ -1,0 +1,7 @@
+{
+  "*.{ts,tsx,js,jsx}": ["pnpm run lint:eslint", "pnpm run lint:prettier"],
+  "*.{css,less,scss}'": ["pnpm run lint:stylelint", "prettier --write"],
+  "*.{ts,tsx,js,jsx,json,html,yml,json,css,less,scss,sass,md}": [
+    "prettier --write"
+  ]
+}

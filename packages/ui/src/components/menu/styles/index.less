@@ -1,0 +1,36 @@
+@import '../../../style/style.module.less';
+
+.sex-menu-item {
+  cursor: pointer;
+  padding: 6px 16px;
+  flex: none;
+  text-align: center;
+  border: 2px solid transparent;
+  border-radius: 4px 4px 0 0;
+  user-select: none;
+
+  &:hover {
+    background-color: @lightAsh-01;
+  }
+}
+
+.sex-menu {
+  display: flex;
+
+  &-vertical {
+    flex-direction: column;
+  }
+
+  &-active {
+    .sex-menu-item();
+
+    color: @color-primary;
+    border-bottom-color: @color-primary;
+  }
+
+  &-disabled {
+    .sex-menu-item();
+
+    cursor: not-allowed;
+  }
+}

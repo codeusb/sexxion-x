@@ -1,0 +1,75 @@
+@import '../../../style/style.module.less';
+
+//less Mixin混合写法
+.button-style(@background: transparent,@border: transparent,@color: @while) {
+  background-color: @background;
+  border-color: @border;
+  color: @color;
+}
+
+.btn {
+  display: inline-block;
+  position: relative;
+  color: @while;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  cursor: pointer;
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+//类型
+.sex-btn-default {
+  .button-style(@while,@lightAsh,@black);
+}
+
+.sex-btn-primary {
+  .button-style(@primary);
+}
+
+.sex-btn-warn {
+  .button-style(@warn);
+}
+
+.sex-btn-danger {
+  .button-style(@danger);
+}
+
+.sex-btn-dark {
+  .button-style(@dark);
+}
+
+//大小
+.sex-btn-small {
+  padding: 8px 30px;
+}
+
+.sex-btn-normal {
+  padding: 12px 40px;
+}
+
+.sex-btn-large {
+  padding: 16px 50px;
+}
+
+//圆角
+.sex-btn-round {
+  border-radius: 12px;
+}
+
+//禁用
+.sex-btn-disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+
+  &:active {
+    pointer-events: none; //标签元素不对指针事件做出反应
+  }
+}

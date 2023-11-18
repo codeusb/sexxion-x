@@ -1,0 +1,111 @@
+@import '../../../style/style.module.less';
+
+.sex-textarea-box {
+  position: relative;
+  display: flex;
+  border-radius: 4px;
+  width: 100%;
+  border: 1px solid @lightAsh;
+
+  &:hover {
+    border-color: @blue-01;
+  }
+}
+
+.sex-textarea-box-focus {
+  border-color: @blue-01;
+  box-shadow:
+    0 0 0 1px @blue-01,
+    0 0 0 3px @primary-outline;
+
+  &:hover {
+    box-shadow:
+      0 0 0 1px @blue-01,
+      0 0 0 3px @primary-outline;
+  }
+}
+
+.sex-textarea-disabled {
+  background-color: @lightAsh-02;
+  cursor: not-allowed;
+
+  &:hover {
+    border-color: @lightAsh;
+    box-shadow: none;
+  }
+}
+
+.textarea {
+  width: 100%;
+  min-height: 42px;
+  font-size: 1rem;
+  transition: all 0.3s;
+  color: @dark;
+  padding: 0 12px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  resize: vertical; //元素是否可调整尺寸，以及可调整的方向。
+  appearance: none; //控制 UI 控件的基于操作系统主题的原生外观。
+
+  &:hover,
+  :focus {
+    box-shadow: none;
+    background: none;
+  }
+
+  &::placeholder {
+    color: @lightAsh;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  //影响设置了 overflow:scroll; 的元素的滚动条样式。
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 2px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: @lightAsh;
+  }
+}
+
+.textarea-clear {
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 6px;
+  transform: translateY(-50%);
+}
+
+.textarea-clear-icon {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  color: @dark;
+
+  &:hover {
+    background-color: @lightAsh;
+  }
+}
+
+.textarea-showtextnum {
+  position: absolute;
+  right: 10px;
+  bottom: -1px;
+  font-size: 10px;
+  color: @lightAsh;
+}

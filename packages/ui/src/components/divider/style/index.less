@@ -1,0 +1,83 @@
+@import '../../../style/style.module.less';
+
+.sex-hor-with-text {
+  border-top: 0;
+  display: flex;
+  align-items: center;
+}
+
+.sex-hor-with-text-center {
+  content: '';
+  flex: 1;
+  border-top: 1px solid @lightAsh;
+}
+
+.sex-hor-with-text-sider {
+  content: '';
+  flex-basis: 24px;
+  flex-grow: 0;
+  border-top: 1px solid @lightAsh;
+}
+
+.sex-divider {
+  &-horizontal {
+    display: block;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    margin: 16px 0;
+    border-top: 1px solid @lightAsh;
+    clear: both;
+
+    //文字居中
+    &.sex-divider-with-text-center {
+      .sex-hor-with-text();
+
+      &::before,
+      &::after {
+        .sex-hor-with-text-center();
+      }
+    }
+
+    &.sex-divider-with-text-left {
+      // .sex-hor-with-text();
+
+      &::before {
+        .sex-hor-with-text-sider();
+      }
+
+      // &::after {
+      //   .sex-hor-with-text-center();
+      // }
+    }
+
+    &.sex-divider-with-text-right {
+      .sex-hor-with-text();
+
+      &::before {
+        .sex-hor-with-text-center();
+      }
+
+      &::after {
+        .sex-hor-with-text-sider();
+      }
+    }
+  }
+
+  &-text {
+    padding: 0 16px;
+    color: @dark;
+    font-size: 18px;
+    display: inline-block;
+  }
+
+  &-vertical {
+    display: inline-block;
+    width: 1px;
+    max-width: 1px;
+    min-height: 1rem;
+    margin: 0 12px;
+    border-left: 1px solid @lightAsh;
+    vertical-align: middle;
+  }
+}

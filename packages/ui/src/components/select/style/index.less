@@ -1,0 +1,123 @@
+@import '../../../style/style.module.less';
+
+.common-icon() {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  color: @dark;
+}
+
+.sex-select {
+  position: relative;
+
+  &-top {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+    border: 1px solid @lightAsh;
+    border-radius: 4px;
+    padding: 2px 16px 2px 8px;
+    cursor: pointer;
+    user-select: none;
+
+    &:not(.sex-select-disabled):hover {
+      border-color: @blue-01;
+    }
+  }
+
+  &-select-options {
+    box-sizing: border-box;
+    position: absolute;
+    // top: 34px;
+    width: 100%;
+    padding: 4px;
+    border-radius: 6px;
+    background-color: @while;
+    max-height: 185px;
+    overflow: auto;
+    z-index: 1000;
+    box-shadow:
+      0 0 0 1px @lightAsh-01,
+      0 0 0 3px @lightAsh-02;
+
+    //影响设置了 overflow:scroll; 的元素的滚动条样式。
+    &::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      border-radius: 2px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: @lightAsh;
+    }
+  }
+
+  &-icon-box {
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    position: absolute;
+    top: calc(50% - 0.5rem);
+    right: 5px;
+  }
+
+  &-icon {
+    .common-icon();
+  }
+
+  &-clear-icon {
+    .common-icon();
+
+    &:hover {
+      background-color: @lightAsh;
+    }
+  }
+
+  &-placeholder {
+    color: @lightAsh;
+  }
+
+  &-disabled {
+    cursor: not-allowed;
+    opacity: 0.65;
+
+    &:active {
+      pointer-events: none; //标签元素不对指针事件做出反应
+    }
+  }
+
+  &-multiple-item {
+    box-sizing: content-box;
+    background-color: @lightAsh-02;
+    margin-right: 4px;
+    padding: 0 6px;
+    border-radius: 4px;
+  }
+}
+
+.option {
+  padding: 2px 6px;
+  border-radius: 4px;
+  user-select: none;
+
+  &:hover {
+    background-color: @lightAsh-01;
+    cursor: pointer;
+  }
+}
+
+.select-option {
+  padding: 2px 6px;
+  border-radius: 4px;
+  background-color: @mantine-blue-01;
+  user-select: none;
+}

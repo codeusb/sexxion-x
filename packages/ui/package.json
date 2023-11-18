@@ -1,0 +1,41 @@
+{
+  "name": "@sexxion-x/ui",
+  "private": false,
+  "version": "0.0.4",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.mjs",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsc && vite build",
+    "test": "jest",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@sexxion-x/shared": "workspace:^",
+    "@types/react-transition-group": "^4.4.9",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react": "^4.0.3",
+    "classnames": "^2.3.2",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "less": "^4.2.0",
+    "react-transition-group": "^4.4.5",
+    "resize-observer-polyfill": "^1.5.1",
+    "vite": "^4.4.5",
+    "vite-plugin-dts": "^3.6.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
