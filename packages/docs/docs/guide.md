@@ -1,21 +1,17 @@
-## This is a guide example.
+# sexxion-x
 
-## title: 基本介绍
+一个 React Ui 组件库
 
-# sexxion-design
+技术栈：vite + react + typescript + dumi
 
-dumi2.2.0 + react18.0.0 + antd5.6.4 的组件库
-
-#### 文档地址
-
-`https://codeusb.github.io/sexxion-design`
+#### 基本使用
 
 ##### 安装
 
 安装组件库
 
 ```bash
-$ npm i sexxion-design -S
+$ npm i @sexxion-x/ui
 ```
 
 #### 使用

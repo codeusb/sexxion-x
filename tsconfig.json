@@ -1,6 +1,6 @@
 {
-  "exclude": ["node_modules"],
   "include": ["packages", "shared", "scripts", "standalone", "*.config.ts"],
+  "exclude": ["node_modules", "packages/docs"],
   "compilerOptions": {
     "module": "ESNext",
     "allowJs": false,
@@ -23,6 +23,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     // "suppressImplicitAnyIndexErrors": true
-    "allowImportingTsExtensions": true
+    "allowImportingTsExtensions": true,
+    "preserveSymlinks": true
   }
 }

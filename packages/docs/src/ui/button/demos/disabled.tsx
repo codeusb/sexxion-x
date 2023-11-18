@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from '@sexxion-x/ui';
+import '@sexxion-x/ui/dist/style.css';
 
 const App: React.FC = () => {
   const onClick = () => {

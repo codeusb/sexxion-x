@@ -10,4 +10,4 @@ typings
 README.md
 node_modules
 packages/example
-packages/docs
+docs

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Divider } from '@sexxion-x/ui';
+import '@sexxion-x/ui/dist/style.css';
 
 const App: React.FC = () => {
   return (

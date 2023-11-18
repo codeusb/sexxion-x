@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import { Button, Input } from '@sexxion-x/ui';
+import '@sexxion-x/ui/dist/style.css';
 
 // 前期测试使用
 const App: React.FC = () => {
