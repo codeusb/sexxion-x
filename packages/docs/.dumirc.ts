@@ -4,7 +4,7 @@ export default defineConfig({
   // themeConfig: {
   //   name: 'd-test',
   // },
-  outputPath: 'docs-dist',
+  outputPath: 'docs_dist',
   favicons: ['https://pic.imgdb.cn/item/64a8fcf91ddac507cc96f555.png'],
   themeConfig: {
     name: 'sexxion-x',

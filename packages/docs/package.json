@@ -6,7 +6,7 @@
     "start": "npm run dev",
     "dev": "dumi dev",
     "build": "dumi build",
-    "docs:deploy": "gh-pages -d docs-dist",
+    "docs:deploy": "gh-pages -d docs_dist",
     "deploy": "npm run build && npm run docs:deploy"
   },
   "authors": [],
