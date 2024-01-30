@@ -20,9 +20,11 @@
     "eslint": "^8.45.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "less": "^4.2.0",
     "vite": "^4.4.5"
   },
   "dependencies": {
-    "@sexxion-x/ui": "workspace:^"
+    "@sexxion-x/ui": "workspace:^",
+    "antd": "^5.13.2"
   }
 }

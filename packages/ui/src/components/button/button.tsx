@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import { forwardRef } from 'react';
 import { useDefaultProps } from '@sexxion-x/shared';
 import { ButtonProps } from './type';
-import './style/index.module.less';
+import './style/index.less';
 
 const defaultProps: ButtonProps = {
   type: 'default',

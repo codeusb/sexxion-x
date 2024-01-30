@@ -1,8 +1,8 @@
 import classNames from 'classnames';
 import React, { forwardRef, Fragment, ReactElement } from 'react';
 import { useDefaultProps, isNumber } from '@sexxion-x/shared';
-import './style/index.less';
 import { SizeProps, SpaceBaseProps } from './type';
+import './style/index.less';
 
 const defaultProps: SpaceBaseProps = {
   direction: 'horizontal',

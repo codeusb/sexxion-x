@@ -1,41 +1,71 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
-import { Button, Input } from '@sexxion-x/ui';
-import '@sexxion-x/ui/dist/style.css';
+import { Tree } from '@sexxion-x/ui';
+// import { Tree as AntdTree } from 'antd';
 import './App.css';
 
 // const { Header, Content, Footer, Sider } = Layout;
 
 // 开发调试页面
 
-function App() {
-  const [count, setCount] = useState(0);
+const treeData = [
+  {
+    title: 'parent 1',
+    key: '0-0',
+    children: [
+      {
+        title: 'parent 1-0',
+        key: '0-0-0',
+        children: [
+          {
+            title: 'leaf',
+            key: '0-0-0-0',
+          },
+          {
+            title: 'leaf',
+            key: '0-0-0-1',
+          },
+        ],
+      },
+      {
+        title: 'parent 1-1',
+        key: '0-0-1',
+        children: [],
+      },
+    ],
+  },
+  {
+    title: 'parent 2',
+    key: '0-1',
+  },
+  {
+    title: 'xff',
+    key: '0-2',
+    children: [
+      {
+        title: 'hha',
+        key: '0-2-1',
+      },
+    ],
+  },
+  {
+    title: 'gwj',
+    key: '0-3',
+  },
+];
 
+function App() {
   return (
     <>
-      <Input />
-      <Button type="primary">123</Button>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      {/* <Menu /> */}
+      {/* <Input /> */}
+      <Tree
+        treeData={treeData}
+        onClickNode={(node) => console.log('点击节点', node)}
+        onSelect={(key) => console.log('点击叶子节点', key)}
+      />
+      {/* <AntdTree treeData={treeData} /> */}
+      {/* <Button type="primary">123</Button> */}
+      {/* <Select options={[{ value: '123', label: 'hha' }]} /> */}
+      {/* <TreeSelect /> */}
     </>
   );
 }

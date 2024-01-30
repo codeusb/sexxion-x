@@ -3,6 +3,7 @@
   "private": true,
   "description": "react ui library",
   "scripts": {
+    "start": "pnpm -F @sexxion-x/example dev",
     "build": "turbo run build --filter=./packages/**/*",
     "clean-pkgs": "pnpm -r exec rm -rf node_modules",
     "clean": "pnpm clean-pkgs && rm -rf node_modules",
